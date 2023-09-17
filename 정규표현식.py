@@ -1,10 +1,8 @@
 import re
 
 def extract_emails(text):
-    # 이메일 주소를 찾기 위한 정규 표현식
     email_pattern = r'\b[a-zA-Z0-9_]+@[a-zA-Z0-9_]+\.[A-Za-z]{2,}\b'
     
-    # 정규 표현식을 사용하여 이메일 주소를 추출
     emails = re.findall(email_pattern, text)
     
     return emails
