@@ -6,7 +6,7 @@ window.title("애완동물 선택하기")
 label1 = Label(window, text="좋아하는 동물 투표", font=("궁서체",), fg="blue")
 label1.pack()
 
-def show_animal_image():
+def showImage():
     selected_animal = var.get()
     animal_images = {
         1: "C:\\Users\\gram\\Desktop\\dog.gif",
@@ -34,7 +34,7 @@ rb3.pack()
 image_label = Label(window)
 image_label.pack()
 
-button1 = Button(window, text="사진보기", command=show_animal_image)
+button1 = Button(window, text="사진보기", command=showImage)
 button1.pack()
 
 window.mainloop()

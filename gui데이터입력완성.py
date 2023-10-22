@@ -71,10 +71,7 @@ def showdata():
     strdata2.append("사용자이름")
     strdata3.append("이메일")
     strdata4.append("출생연도")
-    #strdata1.append("----------")
-    #strdata2.append("----------")
-    #strdata3.append("----------")
-    #strdata4.append("----------")
+
     while True:
         row = cur.fetchone()
         if row == None:
